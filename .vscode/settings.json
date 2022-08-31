@@ -29,9 +29,12 @@
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[css]": {
+    "editor.defaultFormatter": "stylelint.vscode-stylelint"
+  },
   "i18n-ally.displayLanguage": "zh-CN",
 
-  "prettier.enable": false,
+  // "prettier.enable": false,
   "prettier.printWidth": 200,
   "prettier.singleQuote": true,
   "prettier.semi": false,
@@ -101,11 +104,21 @@
   "volar.codeLens.pugTools": false,
   "volar.codeLens.scriptSetupTools": true,
   "volar.completion.preferredTagNameCase": "pascal",
-  "[css]": {
-    "editor.defaultFormatter": "stylelint.vscode-stylelint"
-  },
+  
   "editor.cursorSmoothCaretAnimation": true,
   "editor.smoothScrolling": true,
   "editor.suggest.snippetsPreventQuickSuggestions": false,
   "editor.linkedEditing": true,
+  "editor.autoClosingDelete": "always",
+  "editor.wordWrap": "on",
+  "editor.acceptSuggestionOnEnter": "smart",
+
+  "todohighlight.isEnable": true,
+  "todohighlight.keywords": [
+    {
+      "text": "NOTE:",
+      "color": "#FFF",
+      "backgroundColor": "#41ae3c"
+    }
+  ],
 }
