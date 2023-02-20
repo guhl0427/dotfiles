@@ -17,7 +17,7 @@
 
   "workbench.editor.enablePreviewFromQuickOpen": true,
   "workbench.editor.enablePreview": false,
-  "workbench.colorTheme": "1984 - Cyberpunk",
+  "workbench.colorTheme": "Moegi Black",
   "workbench.iconTheme": "vscode-icons",
 
   "[html]": {
@@ -120,5 +120,29 @@
       "color": "#FFF",
       "backgroundColor": "#41ae3c"
     }
+  ],
+
+  // todo-tree
+  "todo-tree.general.tags": [
+    "BUG",
+    "OPTIMIZE",
+    "FIXME",
+    "TODO",
+    "NOTE",
+    "[ ]",
+    "[x]",
+  ],
+  "todo-tree.highlights.useColourScheme": true,
+  "todo-tree.highlights.backgroundColourScheme": [
+    "#c21f30",
+    "#fca104",
+    "#ea517f",
+    "#41ae3c",
+    "#bbb5ac",
+    "#51c4d3",
+    "#e9ccd3",
+  ],  
+  "todo-tree.highlights.foregroundColourScheme": [
+    "#000",
   ],
 }
