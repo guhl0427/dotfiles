@@ -1,128 +1,61 @@
 {
-  
-  "files.autoSave": "onWindowChange",
-  
-  "editor.tabSize": 2,
-  "editor.glyphMargin": true,
-  // "editor.lineNumbers": "interval",
-  "editor.multiCursorModifier": "ctrlCmd",
-
-  "editor.renderWhitespace": "selection",
-  "editor.suggestSelection": "recentlyUsedByPrefix",
-  "editor.codeActionsOnSave": {
-    "source.fixAll": false,
-    "source.fixAll.eslint": true, // this allows ESLint to auto fix on save
-    "source.organizeImports": false
-  },
-
-  "workbench.editor.enablePreviewFromQuickOpen": true,
-  "workbench.editor.enablePreview": false,
-  "workbench.colorTheme": "Moegi Black",
-  "workbench.iconTheme": "vscode-icons",
-
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[css]": {
-    "editor.defaultFormatter": "stylelint.vscode-stylelint"
-  },
-  "i18n-ally.displayLanguage": "zh-CN",
-
-  // "prettier.enable": false,
-  "prettier.printWidth": 200,
-  "prettier.singleQuote": true,
-  "prettier.semi": false,
-
-  "explorer.confirmDelete": false,
-  "explorer.confirmDragAndDrop": false,
-  "window.dialogStyle": "custom",
-  "window.titleBarStyle": "custom",
-
-  "git.autofetch": true,
-  "git.enableSmartCommit": true,
-  "git.confirmSync": false,  
-  "editor.inlineSuggest.enabled": true,
-  "editor.fontFamily": "Input Mono, Fira Code, monospace",
+  "editor.fontFamily": "Fira Code, Consolas, 'Courier New', monospace, MesloLGM Nerd Font",
+  "editor.fontSize": 14,
   "editor.fontLigatures": true,
-  "liveServer.settings.donotShowInfoMsg": true,
+  "editor.renderWhitespace": "selection",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.smoothScrolling": true,
+  "editor.cursorBlinking": "smooth",
+  "editor.detectIndentation": false,
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "never",
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "never"
+  },
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "editor.inlineSuggest.enabled": true,
+  "editor.suggest.snippetsPreventQuickSuggestions": false,
+  "editor.suggest.insertMode": "replace",
+  "editor.acceptSuggestionOnEnter": "smart",
+  "editor.suggestSelection": "recentlyUsedByPrefix",
+  "editor.linkedEditing": true,
+  "editor.guides.bracketPairs": true,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.accessibilitySupport": "off",
+  "editor.stickyScroll.enabled": true,
+  "editor.minimap.enabled": true,
   
-  // "gitlens.statusBar.enabled": false,
-  "gitlens.codeLens.authors.enabled": false,
-  "gitlens.codeLens.enabled": false,
-  "gitlens.codeLens.recentChange.enabled": false,
-  "gitlens.menus": {
-    "editor": {
-      "blame": false,
-      "clipboard": true,
-      "compare": true,
-      "history": false,
-      "remote": false
-    },
-    "editorGroup": {
-      "blame": true,
-      "compare": false
-    },
-    "editorTab": {
-      "clipboard": true,
-      "compare": true,
-      "history": true,
-      "remote": true
-    },
-    "explorer": {
-      "clipboard": true,
-      "compare": true,
-      "history": true,
-      "remote": true
-    },
-    "scm": {
-      "authors": true
-    },
-    "scmGroup": {
-      "compare": true,
-      "openClose": true,
-      "stash": true
-    },
-    "scmGroupInline": {
-      "stash": true
-    },
-    "scmItem": {
-      "clipboard": true,
-      "compare": true,
-      "history": true,
-      "remote": false,
-      "stash": true
+  "workbench.editor.enablePreview": false,
+  "workbench.tree.enableStickyScroll": true,
+  "workbench.list.smoothScrolling": true,
+  "workbench.colorTheme": "Moegi Black",
+  "workbench.colorCustomizations": {
+    "[Moegi Black]": {
+      // "activityBar.activeBackground": "#16a34a",
+      "tab.activeBorder": "#16a34a",
+      "button.background": "#166534",
+      "button.hoverBackground": "#16a34a"
     }
   },
-
-  "volar.autoCompleteRefs": false,
-  "volar.codeLens.pugTools": false,
-  "volar.codeLens.scriptSetupTools": true,
-  "volar.completion.preferredTagNameCase": "pascal",
   
-  "editor.cursorSmoothCaretAnimation": true,
-  "editor.smoothScrolling": true,
-  "editor.suggest.snippetsPreventQuickSuggestions": false,
-  "editor.linkedEditing": true,
-  "editor.autoClosingDelete": "always",
-  "editor.wordWrap": "on",
-  "editor.acceptSuggestionOnEnter": "smart",
+  "explorer.confirmDelete": false,
+  "files.autoSave": "onWindowChange",
+  "files.exclude": {
+    "**/*.meta": true
+  },
+  
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.mergeEditor": false,
+  "git.enableSmartCommit": true,
+  "git.openRepositoryInParentFolders": "never",
 
-  "todohighlight.isEnable": true,
-  "todohighlight.keywords": [
-    {
-      "text": "NOTE:",
-      "color": "#FFF",
-      "backgroundColor": "#41ae3c"
-    }
-  ],
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
 
-  // todo-tree
   "todo-tree.general.tags": [
     "BUG",
     "OPTIMIZE",
@@ -130,7 +63,7 @@
     "TODO",
     "NOTE",
     "[ ]",
-    "[x]",
+    "[x]"
   ],
   "todo-tree.highlights.useColourScheme": true,
   "todo-tree.highlights.backgroundColourScheme": [
@@ -140,9 +73,36 @@
     "#41ae3c",
     "#bbb5ac",
     "#51c4d3",
-    "#e9ccd3",
-  ],  
-  "todo-tree.highlights.foregroundColourScheme": [
-    "#000",
+    "#e9ccd3"
   ],
+  "todo-tree.highlights.foregroundColourScheme": [
+    "#000"
+  ],
+
+  "gitlens.defaultGravatarsStyle": "mp",
+  "gitlens.hovers.avatarSize": 40,
+  "gitlens.views.commits.files.layout": "list",
+  "gitlens.statusBar.enabled": false,
+  "gitlens.hovers.currentLine.over": "line",
+  "gitlens.codeLens.enabled": false,
+  "gitlens.views.repositories.files.layout": "tree",
+  "gitlens.views.commits.avatars": false,
+  "gitlens.views.scm.grouped.views": {
+    "commits": false,
+    "branches": false,
+    "remotes": true,
+    "stashes": false,
+    "tags": false,
+    "worktrees": true,
+    "contributors": true,
+    "fileHistory": false,
+    "repositories": false,
+    "searchAndCompare": true,
+    "launchpad": true
+  },
+  "gitlens.launchpad.indicator.enabled": false,
+  "gitlens.graph.minimap.enabled": false,
+  "gitlens.views.commitDetails.files.layout": "tree",
+  
+  "window.menuBarVisibility": "compact",
 }
